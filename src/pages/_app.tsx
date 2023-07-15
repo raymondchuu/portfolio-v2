@@ -28,7 +28,7 @@ const App: FC<AppProps<PageProps>> = (props) => {
   /** NOTE: this is where dev tools and helper modules can be placed */
   useEffect(() => {
     if (process.env.NODE_ENV === 'development' && window.location.href.indexOf('?nostat') === -1) {
-      import(/* webpackChunkName: "jam3-stats" */ '@jam3/stats').then((module) => module.default());
+      // import(/* webpackChunkName: "jam3-stats" */ '@jam3/stats').then((module) => module.default());
     }
   }, []);
 

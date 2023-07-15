@@ -1,0 +1,18 @@
+@import 'shared';
+
+.root {
+  text-align: left;
+  height: 100vh;
+
+  .downArrowContainer {
+    position: absolute;
+    bottom: 2%;
+    left: 90%;
+  }
+
+  .downArrow {
+    height: 4vh;
+    width: auto;
+    cursor: pointer;
+  }
+}

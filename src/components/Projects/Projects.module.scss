@@ -1,0 +1,26 @@
+@import 'shared';
+
+.root {
+  margin: px(100) 0;
+
+  .title {
+    text-align: center;
+    font-size: px(20);
+    letter-spacing: 2px;
+    margin-bottom: px(50);
+
+    @include media-desktopSm {
+      text-align: left;
+    }
+  }
+
+  .projectContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    @include media-desktopSm {
+      width: 100%;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}

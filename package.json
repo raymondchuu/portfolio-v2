@@ -46,6 +46,8 @@
   ],
   "dependencies": {
     "@jam3/detect": "2.0.5",
+    "@react-three/drei": "^9.32.4",
+    "@react-three/fiber": "^8.8.7",
     "@reduxjs/toolkit": "^1.8.2",
     "classnames": "2.3.1",
     "default-passive-events": "2.0.0",
@@ -56,10 +58,16 @@
     "next": "^12.3.1",
     "no-op": "1.0.3",
     "normalize.css": "8.0.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "r3f-perf": "^6.5.0",
+    "react": "^18.2.0",
+    "react-chrono": "^2.2.2",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.10.1",
     "react-redux": "8.0.2",
+    "react-scripts": "^5.0.1",
+    "react-switch": "^7.0.0",
     "react-use": "17.4.0",
+    "three": "^0.145.0",
     "xss": "1.0.13"
   },
   "devDependencies": {

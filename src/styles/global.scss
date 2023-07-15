@@ -27,6 +27,7 @@ body {
   padding: 0;
   font-size: px(16);
   word-break: keep-all;
+  min-height: 100%;
   @include font-body;
 }
 
