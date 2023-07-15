@@ -1,0 +1,54 @@
+@import 'shared';
+
+.root {
+  max-width: 80%;
+  margin: px(50);
+  padding: px(25);
+  height: 50vh;
+  position: relative;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+
+  @include media-mobile {
+    height: 80vh;
+  }
+
+  .image {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+  }
+
+  .textContainer {
+    text-align: left;
+  }
+
+  .githubLogo {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .title {
+    margin: px(20) 0;
+  }
+
+  .description {
+    font-size: px(14);
+    margin-bottom: px(20);
+    line-height: 1.5;
+
+    @include media-tablet {
+      font-size: px(16);
+    }
+  }
+}
+
+.root:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,22 @@
+@import 'shared';
+
+.root {
+  margin: px(100) 0;
+
+  .title {
+    text-align: center;
+    font-size: px(20);
+    letter-spacing: 2px;
+    margin-bottom: px(50);
+
+    @include media-desktopSm {
+      text-align: left;
+    }
+  }
+
+  // .timelineContainer {
+  //     p {
+  //         font-size: 1.20rem;
+  //     }
+  // }
+}

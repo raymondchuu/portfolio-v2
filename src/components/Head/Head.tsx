@@ -29,9 +29,9 @@ const Head: FC<HeadProps> = ({ title, keywords, description, siteName, image }) 
       {/* Generate favicons in https://realfavicongenerator.net */}
       <meta name="theme-color" content="#ffffff" />
       <meta name="msapplication-TileColor" content="#ffffff" />
-      <link rel="apple-touch-icon" sizes="180x180" href="/common/favicons/apple-touch-icon.png" />
-      <link rel="icon" type="image/png" sizes="32x32" href="/common/favicons/favicon-32x32.png" />
-      <link rel="icon" type="image/png" sizes="16x16" href="/common/favicons/favicon-16x16.png" />
+      <link rel="apple-touch-icon" sizes="180x180" href="/common/favicons/boy-favicon.png" />
+      <link rel="icon" type="image/png" sizes="32x32" href="/common/favicons/boy-favicon.png" />
+      <link rel="icon" type="image/png" sizes="16x16" href="/common/favicons/boy-favicon.png" />
       <link rel="manifest" href="/common/favicons/site.webmanifest" crossOrigin="use-credentials" />
       <link rel="mask-icon" href="/common/favicons/safari-pinned-tab.svg" color="#000000" />
       <link rel="shortcut icon" href="/common/favicons/favicon.ico" />

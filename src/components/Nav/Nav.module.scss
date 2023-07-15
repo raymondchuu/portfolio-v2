@@ -65,4 +65,33 @@
       }
     }
   }
+
+  .navIcon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: px(20);
+    cursor: pointer;
+
+    @include media-tablet {
+      margin-left: px(50);
+    }
+  }
+
+  .navImage {
+    width: px(24);
+    height: auto;
+
+    @include media-tablet {
+      width: px(32);
+    }
+  }
+
+  .navText {
+    font-size: px(10);
+
+    @include media-tablet {
+      font-size: px(12);
+    }
+  }
 }

@@ -1,10 +1,24 @@
 @import 'shared';
 
 .root {
-  .hero {
-    width: 100%;
-    color: #333;
+  width: 100%;
+  color: #333;
+  margin-bottom: -100px;
 
+  padding-left: px(20);
+  padding-right: px(20);
+
+  @include media-desktopSm {
+    padding-left: px(60);
+    padding-right: px(60);
+  }
+
+  @include media-desktopMd {
+    padding-left: px(120);
+    padding-right: px(120);
+  }
+
+  .home {
     .title {
       @include typography-h1;
       margin: 0;
