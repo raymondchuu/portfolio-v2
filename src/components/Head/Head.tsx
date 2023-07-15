@@ -55,7 +55,7 @@ const Head: FC<HeadProps> = ({ title, keywords, description, siteName, image }) 
 
       {process.env.NEXT_PUBLIC_DNS_PREFETCH && (
         <>
-          <link rel="preconnect" href={process.env.NEXT_PUBLIC_DNS_PREFETCH} crossOrigin="true" />
+          <link rel="preconnect" href={process.env.NEXT_PUBLIC_DNS_PREFETCH} crossOrigin="anonymous" />
           <link rel="dns-prefetch" href={process.env.NEXT_PUBLIC_DNS_PREFETCH} />
         </>
       )}
