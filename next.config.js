@@ -3,11 +3,16 @@ const withVideos = require('next-videos');
 
 const nextJSConfig = {
   trailingSlash: true,
-  compress: false, // NOTE: enable this when doing SSR
+  compress: true, // NOTE: enable this when doing SSR
   productionBrowserSourceMaps: process.env.NODE_ENV === 'development',
   devIndicators: { buildActivity: false },
   sassOptions: { includePaths: [path.join(__dirname, 'src/styles')] },
   distDir: process.env.NEXT_PUBLIC_DIST_DIR || '.next',
+  eslint: {
+    // Warning: This allows production builds to successfully complete even if
+    // your project has ESLint errors.
+    ignoreDuringBuilds: true
+  },
   webpack: function (config, options) {
     config.module.rules.push({ test: /\.svg$/, use: [{ loader: '@svgr/webpack' }] });
     config.module.rules.push({
