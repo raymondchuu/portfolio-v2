@@ -35,7 +35,7 @@
     "adviser-dev": "adviser --tags dev --verbose",
     "adviser-ci": "adviser --tags ci --verbose --quiet",
     "sass-lint": "stylelint \"./src/**/*.scss\"",
-    "ls-lint": "node_modules/.bin/ls-lint",
+    "ls-lint": "ls-lint",
     "tsc": "tsc"
   },
   "browserslist": [
