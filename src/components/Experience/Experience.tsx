@@ -1,4 +1,4 @@
-import { FC, memo, useEffect, useReducer, useRef } from 'react';
+import { FC, memo, useEffect, useRef } from 'react';
 import { Chrono } from 'react-chrono';
 import classNames from 'classnames';
 import gsap from 'gsap';
@@ -16,7 +16,6 @@ export type ExperienceProps = {
 const Experience: FC<ExperienceProps> = ({ className }) => {
   const titleRef = useRef<HTMLParagraphElement>(null);
   const { isDarkMode } = useAppSelector((state) => state);
-  const [, forceUpdate] = useReducer((x) => x + 1, 0);
 
   useEffect(() => {
     gsap.from(titleRef.current, {
@@ -26,11 +25,6 @@ const Experience: FC<ExperienceProps> = ({ className }) => {
       duration: 1
     });
   }, []);
-
-  useEffect(() => {
-    console.log('test');
-    forceUpdate();
-  }, [isDarkMode]);
 
   return (
     <div className={classNames('Experience', css.root, className)}>
