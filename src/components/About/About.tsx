@@ -6,6 +6,7 @@ import css from './About.module.scss';
 
 import BaseImage from '@/components/BaseImage/BaseImage';
 
+import SelfieImage from '@/assets/images/selfie.jpg';
 import data from '@/assets/static';
 
 export type AboutProps = {
@@ -73,7 +74,7 @@ const About: FC<AboutProps> = ({ className }) => {
           <p ref={paragraph3Ref}>{about.paragraph3}☕</p>
         </div>
         <div className={css.imageContainer} ref={imageRef}>
-          <BaseImage className={css.image} data={require('@/assets/images/selfie.jpg').default} />
+          <BaseImage className={css.image} src={SelfieImage.src} />
         </div>
       </div>
     </div>

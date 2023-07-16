@@ -3,7 +3,7 @@ const withVideos = require('next-videos');
 
 const nextJSConfig = {
   trailingSlash: true,
-  compress: true, // NOTE: enable this when doing SSR
+  compress: false, // NOTE: enable this when doing SSR
   productionBrowserSourceMaps: process.env.NODE_ENV === 'development',
   devIndicators: { buildActivity: false },
   sassOptions: { includePaths: [path.join(__dirname, 'src/styles')] },
