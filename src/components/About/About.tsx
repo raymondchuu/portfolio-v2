@@ -4,8 +4,6 @@ import gsap from 'gsap';
 
 import css from './About.module.scss';
 
-import BaseImage from '@/components/BaseImage/BaseImage';
-
 import SelfieImage from '@/assets/images/selfie.jpg';
 import data from '@/assets/static';
 
@@ -74,7 +72,7 @@ const About: FC<AboutProps> = ({ className }) => {
           <p ref={paragraph3Ref}>{about.paragraph3}☕</p>
         </div>
         <div className={css.imageContainer} ref={imageRef}>
-          <BaseImage className={css.image} src={SelfieImage.src} />
+          <img className={css.image} src={SelfieImage.src} alt="Portrait of myself" />
         </div>
       </div>
     </div>

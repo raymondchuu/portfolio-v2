@@ -5,8 +5,6 @@ import gsap from 'gsap';
 
 import css from './Card.module.scss';
 
-import BaseImage from '@/components/BaseImage/BaseImage';
-
 import { useAppSelector } from '@/redux';
 
 export type CardProps = {
@@ -41,7 +39,7 @@ const Card: FC<CardProps> = ({ className, image, title, description, delay, link
       style={{ backgroundColor: isDarkMode ? '#1e1e1e' : '#FFF', transition: '0.5s ease' }}
     >
       <div className={css.imageContainer}>
-        <BaseImage src={image} className={css.image} />
+        <img src={image} className={css.image} alt="Portrait of a project" />
       </div>
       <div className={css.textContainer}>
         <h3 className={css.title}>{title}</h3>
